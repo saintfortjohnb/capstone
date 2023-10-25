@@ -27,7 +27,7 @@ export default function Sidebar() {
             <SidebarButton title='Feed' to='/feed' icon={<MdOutlineFeed />} />
             <SidebarButton title='Search' to='/search' icon={<FaSearch />} />
             <SidebarButton title='Favorites' to='/favorites' icon={<MdFavorite />} />
-            <SidebarButton title='Playlists' to='/' icon={<MdLibraryBooks />} />
+            <SidebarButton title='Playlists' to='/playlists' icon={<MdLibraryBooks />} />
         </div>
         <SidebarButton title='Logout' to='' icon={<FaSignOutAlt />} onClick={logout} />
     </div>
