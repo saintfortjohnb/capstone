@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 This will display the spotify logo and login button.
 When clicked, the button will redirect to a spotify login page to gain access, then redirect to app after.
 
-### Running Locally
+### `Running Locally`
 If you wish to run this application locally on your machine, follow these steps:
 
 ## Environment Variables:
