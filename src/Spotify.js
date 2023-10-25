@@ -19,6 +19,3 @@ export const setClientToken = (token) => {
 } 
 
 export default apiClient;
-git remote add origin https://github.com/saintfortjohnb/capstone.git
-git branch -M main
-git push -u origin main
