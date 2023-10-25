@@ -14,10 +14,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 This will display the spotify logo and login button.
 When clicked, the button will redirect to a spotify login page to gain access, then redirect to app after.
 
-### `Running Locally`
+## `Running Locally`
 If you wish to run this application locally on your machine, follow these steps:
 
-## `Environment Variables:`
+### `Environment Variables:`
 
 You'll need a .env file in the root directory of the project.
 Add the following line to the .env file:
@@ -41,5 +41,5 @@ Axios - Promise-based HTTP client for making HTTP requests.
 
 ### `Scripts`
 npm start: Runs the app in development mode.
-npm test: Launches the test runner in the interactive watch mode.
+
 npm build: Builds the app for production to the build folder.
