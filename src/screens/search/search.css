@@ -59,7 +59,7 @@ h3 {
     margin-left: auto;
     width: 100%;
     overflow-y: auto;
-    max-height: 34vh;
+    max-height: 35vh;
 }
 
 .artist-results::-webkit-scrollbar {
