@@ -28,7 +28,7 @@ export default function Home() {
         setToken(currentToken);
         setClientToken(currentToken);
     } else {
-      window.location = '/';
+      window.location = '/feed';
     }
   }, []);
 
@@ -37,7 +37,7 @@ export default function Home() {
       <div className='main-body'>
         <Sidebar />
         <Routes>
-            <Route path="/" element={<Playlists />} />
+            <Route path="/playlists" element={<Playlists />} />
             <Route path="/feed" element={<Feed />} />
             <Route path="/search" element={<Search token={token} />} />
             <Route path="/favorites" element={<Favorites />} />
