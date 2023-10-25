@@ -15,7 +15,7 @@ export default function Home() {
 
   const getTokenFromURL = () => {
     const hash = window.location.hash;
-    window.location.hash = '';
+    window.location.hash = '/feed';
     const token = hash.split('&')[0].split('=')[1];
     return token;
   };
