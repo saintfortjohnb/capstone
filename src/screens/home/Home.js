@@ -15,7 +15,7 @@ export default function Home() {
 
   const getTokenFromURL = () => {
     const hash = window.location.hash;
-    window.location.hash = '/feed';
+    window.location.hash = '';
     const token = hash.split('&')[0].split('=')[1];
     return token;
   };
@@ -28,7 +28,7 @@ export default function Home() {
         setToken(currentToken);
         setClientToken(currentToken);
     } else {
-      window.location = '/feed';
+      window.location = '/';
     }
   }, []);
 
@@ -38,7 +38,7 @@ export default function Home() {
         <Sidebar />
         <Routes>
             <Route path="/playlists" element={<Playlists />} />
-            <Route path="/feed" element={<Feed />} />
+            <Route path="/" element={<Feed />} />
             <Route path="/search" element={<Search token={token} />} />
             <Route path="/favorites" element={<Favorites />} />
         </Routes>

@@ -24,7 +24,7 @@ export default function Sidebar() {
     <div className='sidebar-container'>
         <img src={image} className='profile-image' alt='profile-pic' />
         <div>
-            <SidebarButton title='Feed' to='/feed' icon={<MdOutlineFeed />} />
+            <SidebarButton title='Feed' to='/' icon={<MdOutlineFeed />} />
             <SidebarButton title='Search' to='/search' icon={<FaSearch />} />
             <SidebarButton title='Favorites' to='/favorites' icon={<MdFavorite />} />
             <SidebarButton title='Playlists' to='/playlists' icon={<MdLibraryBooks />} />
