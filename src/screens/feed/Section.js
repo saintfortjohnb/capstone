@@ -10,11 +10,11 @@ function Section({ title, items }) {
 
     const playItem = (item) => {
         if(item.type === 'track') {
-            navigate('/feed', { state: { track: item } });
+            navigate('/', { state: { track: item } });
         } else if (item.type === 'album') {
-            navigate('/feed', { state: { id: item.id, type: item.type } });
+            navigate('/', { state: { id: item.id, type: item.type } });
         } else if (item.type === 'playlist') {
-            navigate('/feed', { state: { id: item.id, type: item.type } });
+            navigate('/', { state: { id: item.id, type: item.type } });
         }
     };
     return (

@@ -17,7 +17,7 @@ export default function Playlists() {
   const navigate = useNavigate();
 
   const playPlaylist = (id) => {
-    navigate('/', {state: {id: id, type: 'playlist'} });
+    navigate('/playlists', {state: {id: id, type: 'playlist'} });
   }
     
   return (
