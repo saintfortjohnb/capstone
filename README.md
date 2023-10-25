@@ -24,4 +24,20 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### 
+### Built With
+React - A JavaScript library for building user interfaces. This project uses the latest version (v18.2.0) for more efficient updates and rendering.
+
+React DOM - Serves as the entry point to the DOM and server renderers for React.
+
+React Router DOM - Declarative routing for React (v6.17.0).
+
+React Icons - Utilize ES6 imports to include only the icons your project is using.
+
+React Spotify Web Playback - A Spotify web playback SDK component for React.
+
+Axios - Promise-based HTTP client for making HTTP requests.
+
+### Scripts
+npm start: Runs the app in development mode.
+npm test: Launches the test runner in the interactive watch mode.
+npm build: Builds the app for production to the build folder.
