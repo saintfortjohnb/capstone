@@ -1,0 +1,87 @@
+.screen-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;      /* Allow vertical scrolling if needed */
+    max-height: 100vh; 
+}
+
+.search-bar {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #e3e3e3;
+    position: sticky;
+    top: 0;  /* Position from the top of the container */
+    z-index: 10;  /* Ensure it's above other content */
+    background-color: #1E2A3E;
+    margin-top: 0;
+    padding-top: 5px;
+}
+
+.results-container {
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.left-container {
+    width: 49%;
+}
+
+.track-results {
+    width: 100%;
+    overflow-y: auto; /* Allow scrolling for long lists */
+    max-height: 100vh; /* Cap the height to 80% of the viewport height */
+}
+
+.track-results::-webkit-scrollbar {
+    display: none; 
+}
+
+.track-results {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+.right-container {
+    width: 49%;
+    margin-left: auto;
+}
+
+.artist-results {
+    margin-left: auto;
+    width: 100%;
+    overflow-y: auto;
+    max-height: 34vh;
+}
+
+.artist-results::-webkit-scrollbar {
+    display: none; 
+}
+
+.artist-results {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+
+.album-results {
+    width: 100%;
+    overflow-y: auto; 
+    max-height: 100%; 
+}
+
+.album-results::-webkit-scrollbar {
+    display: none; 
+}
+
+.album-results {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}

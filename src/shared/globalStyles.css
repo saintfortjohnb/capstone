@@ -1,0 +1,9 @@
+.screen-container {
+    width: calc(100% - 190px);
+    height: calc(100% - 120px);
+    background-color: #1E2A3E;
+}
+
+.flex {
+    display: flex;
+}

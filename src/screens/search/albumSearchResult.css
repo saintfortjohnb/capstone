@@ -1,0 +1,33 @@
+.album-info {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid #f95959;
+    transition: background-color 0.3s ease;
+}
+
+.album-info:hover {
+    background-color: #455d7a;
+}
+
+.album-image {
+    width: 25%;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.album-title {
+    color: #e3e3e3;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.album-artist {
+    color: #8f8f8f;
+    font-size: 16px;
+    margin-left: auto;
+}
