@@ -14,15 +14,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 This will display the spotify logo and login button.
 When clicked, the button will redirect to a spotify login page to gain access, then redirect to app after.
 
-### `npm run build`
+### Running Locally
+If you wish to run this application locally on your machine, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Environment Variables:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You'll need a .env file in the root directory of the project.
+Add the following line to the .env file:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+REACT_APP_SPOTIFY_CLIENT_ID=<your_spotify_client_id_here>
+
+Replace <your_spotify_client_id_here> with your actual Spotify client ID.
 
 ### Built With
 React - A JavaScript library for building user interfaces. This project uses the latest version (v18.2.0) for more efficient updates and rendering.
