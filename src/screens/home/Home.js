@@ -21,31 +21,32 @@ export default function Home() {
   };
 
   useEffect(() => {
-    let currentToken = window.localStorage.getItem('token') || getTokenFromURL();
-
-    if (currentToken) {
-        window.localStorage.setItem('token', currentToken);
-        setToken(currentToken);
-        setClientToken(currentToken);
-    } else {
-      window.location = '/';
+    const urlToken = getTokenFromURL();
+    if (urlToken) {
+      window.localStorage.setItem('token', urlToken);
+      setToken(urlToken);
+      setClientToken(urlToken);
     }
   }, []);
 
-  return (!token ? <Login /> :
-    <Router>
-      <div className='main-body'>
-        <Sidebar />
-        <Routes>
-            <Route path="/playlists" element={<Playlists />} />
-            <Route path="/" element={<Feed />} />
-            <Route path="/search" element={<Search token={token} />} />
-            <Route path="/favorites" element={<Favorites />} />
-        </Routes>
-        <div className='player-bar'>
-          <PlayerBar token={token} />
+  if (token) {
+    return (
+      <Router>
+        <div className='main-body'>
+          <Sidebar />
+          <Routes>
+              <Route path="/playlists" element={<Playlists />} />
+              <Route path="/" element={<Feed />} />
+              <Route path="/search" element={<Search token={token} />} />
+              <Route path="/favorites" element={<Favorites />} />
+          </Routes>
+          <div className='player-bar'>
+            <PlayerBar token={token} />
+          </div>
         </div>
-      </div>
-    </Router>
-  )
+      </Router>
+    )
+  } else {
+    return <Login />;
+  }    
 }
