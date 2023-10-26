@@ -11,26 +11,21 @@ import { setClientToken } from '../../Spotify'
 import PlayerBar from '../../components/sidebar/PlayerBar'
 
 export default function Home() {
-  const [token, setToken] = useState('');
-
   const getTokenFromURL = () => {
     const hash = window.location.hash;
     window.location.hash = '';
     const token = hash.split('&')[0].split('=')[1];
     return token;
   };
+  
+  const [token, setToken] = useState(window.localStorage.getItem('token') || getTokenFromURL());
 
   useEffect(() => {
-    let currentToken = window.localStorage.getItem('token') || getTokenFromURL();
-
-    if (currentToken) {
-        window.localStorage.setItem('token', currentToken);
-        setToken(currentToken);
-        setClientToken(currentToken);
-    } else {
-      window.location = '/';
+    if (token) {
+        window.localStorage.setItem('token', token);
+        setClientToken(token);
     }
-  }, []);
+  }, [token]);
 
   return (!token ? <Login /> :
     <Router>
