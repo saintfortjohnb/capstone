@@ -4,11 +4,9 @@ import SidebarButton from './SidebarButton'
 import { FaSearch, FaSignOutAlt } from 'react-icons/fa';
 import { MdLibraryBooks, MdFavorite, MdOutlineFeed} from 'react-icons/md';
 import apiClient from '../../Spotify';
-import { useNavigate } from 'react-router-dom';
 
 export default function Sidebar() {
     const [image, setImage] = useState("https://wallpapers.com/images/hd/cool-profile-picture-87h46gcobjl5e4xu.jpg");
-    const navigate = useNavigate();
 
     useEffect(() => {
         apiClient.get('me').then(response => {
@@ -18,7 +16,7 @@ export default function Sidebar() {
 
     function logout() {
         window.localStorage.removeItem('token');
-        navigate('/');
+        window.location.href = 'http://localhost:3000'
     }
   return (
     <div className='sidebar-container'>
