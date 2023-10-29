@@ -11,7 +11,7 @@ export default function SidebarButton(props) {
     const btnClass = isActive ? 'btn-body active' : 'btn-body';
   return (
     <Link to={props.to}>
-        <div className={btnClass}>
+        <div className={btnClass} onClick={props.onClick}>
             <IconContext.Provider value={{size: '36px', className: 'btn-icon'}}>
                 {props.icon}
             <p className='btn-title'>{props.title}</p>
