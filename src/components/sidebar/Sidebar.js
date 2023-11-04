@@ -16,7 +16,7 @@ export default function Sidebar() {
 
     function logout() {
         window.localStorage.removeItem('token');
-        window.location.href = 'http://localhost:3000'
+        window.location.href = 'https://echo-ggr6.onrender.com'
     }
   return (
     <div className='sidebar-container'>
